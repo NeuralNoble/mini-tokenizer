@@ -4,9 +4,7 @@ import html
 from bpe import tok, bpe_encode_string
 
 
-# -------------------------
-# Token coloring (nice UI)
-# -------------------------
+
 def random_soft_color():
     h = random.randint(0, 360)
     s = random.randint(30, 70)
@@ -76,9 +74,7 @@ custom_css = """
 """
 
 
-# -------------------------
-# Build UI
-# -------------------------
+
 
 with gr.Blocks(css=custom_css, title="Hindi BPE Tokenizer") as demo:
 
